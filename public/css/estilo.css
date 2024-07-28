@@ -1,0 +1,240 @@
+/* ESTILOS COMUNES */
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+img {
+    border-radius: 10px;
+}
+
+/* ESTILOS HEADER */
+
+header {
+  padding: 60px;
+  text-align: center;
+  background-image: url(../img/header5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header div {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0, 0.7);
+  background-image: linear-gradient(rgba(0, 255, 26, 0.523), rgba(0, 115, 255, 0.66));
+  color: azure;
+  font-size: 1.1rem;
+}
+@media (max-width: 800px) {
+    header {
+      background-position: center;
+    }
+}
+/* ESTILOS NAVBAR */
+.navbar{
+  display: flex;
+  justify-content: center;
+  background-color: #0e7f25c4;
+  position: sticky;
+  top: 0;
+  border-style:inset outset;
+  border-width: 5px;
+  border-color: rgb(15, 117, 165);
+}
+.navbar a {
+    color: azure;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: blue;
+}
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    position: unset;
+  }
+  .navbar a {
+    text-align: center;
+  }
+}
+/* ESTILO PARTE PRINCIPAL*/
+
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+}
+aside {
+  flex-basis: 25%;
+  padding: 10px;
+  background-color: #f1faee;
+  text-align: center;
+}
+main {
+  flex-basis: 75%;
+  padding: 20px;
+  padding-left: 40px;
+  background-color: #a8dadc;
+}
+main h2 {
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: #1d3557;
+  text-align: center;
+}
+main p{
+  font-style: italic;
+}
+main img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: top;
+}
+main .readmore {
+background-color: #457b9d;
+color: #f1faee;
+text-decoration: none;
+padding: 10px;
+border-radius: 10px;
+display: block;
+margin: auto;
+text-align: center;
+width: fit-content;
+}
+main .readmore:hover {
+  background-color: green;
+}
+.seemore {
+  display: block;
+  background-color: #457b9d;
+  color: #f1faee;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 10px;
+}
+main .seemore:hover {
+  background-color: green;
+}
+@media (max-width: 800px) {
+  .principal {
+    flex-direction: column;
+  }
+}
+.imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+}
+.imagen img:hover {
+  transform: scale(1.04);
+}
+.ca {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 2px dotted;
+  background-image: linear-gradient(green, blue);
+}
+
+.asidetitulo{
+    text-decoration: underline;
+}
+@media (max-width: 800px) {
+  .imagen img{
+    width: 60%;
+    height: auto;
+  }
+}
+/* ESTILO FOOTER */
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: #f1faee;
+}
+
+/* ESTILOS FORMULARIOS */
+
+form {
+  padding: 40px;
+  background-color: green;
+  border: 5px outset blue;
+  text-align: center;
+}
+label {
+  background-color: rgb(175, 198, 190);
+  color: #f1faee;
+  padding: 10px;
+  border-radius: 15px;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  border: 10px double blue;
+  margin-top: 5vh;
+}
+input {
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+}
+label, input {
+  width: 50%;
+  font-size: larger;
+  border-radius: 10px;
+}
+input[type="reset"]:hover{
+  background-color:blue;
+  font-size: 20px;
+  font-weight: 700;
+}
+input[type="submit"]:hover{
+  background-color: blue;
+  font-size: 20px;
+  font-weight: 700;
+}
+legend {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+/* ESTILOS GALERIA DE FOTOS */
+h1 {
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: #1d3557;
+  text-align: center;
+  text-decoration: underline;
+}
+.galeria img {
+  width: 39%;
+  height: auto;
+  padding: 20px;
+  margin-left: 8%;
+  object-fit:cover;
+  transition: 0.5s all ease-in-out;
+}
+.galeria img:hover {
+  transform: scale(1.04);
+}
+@media (max-width: 800px) {
+  .galeria img{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 5px;
+  }
+}
